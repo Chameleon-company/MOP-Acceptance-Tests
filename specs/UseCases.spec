@@ -263,3 +263,30 @@ Doesn't have a navigation bar
    |-----------|
    |Ideal Green Roof Locations|
    |Scenario   |
+   
+   ## Verify use case "Usecase-liveabilityanalysis"
+
+* Open Web application
+* Wait for "10" second
+* Click "Show more ↓"
+* Wait for "2" second
+* Click "Usecase-liveabilityanalysis"
+* Wait for "3" second
+* Confirm items in navigation bar
+
+   |description|
+   |-----------|
+   |Home       |
+   |About      |
+   |FAQ        |
+   |Contact    |
+   
+* Confirm image in navigation bar "/static/images/moplogo.png"
+* Confirm image in navigation bar "/static/City_Of_Melbourne_Logo.png"
+* Confirm button in navigation bar "https://github.com/D2I-Melbourne/MOP"
+
+* Must have 
+   |description|
+   |-----------|
+   |Liveability Analysis by Location|
+   |Scenario   |
