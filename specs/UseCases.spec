@@ -15,7 +15,7 @@ Doesn't have a navigation bar
 * Must have 
    |description|
    |-----------|
-   |USE CASE: Spotting areas for public transportation planning in City of Melbourne|
+   |Spot Parking Problem|
    |Scenario    |
    |Walkthrough |
 
@@ -105,6 +105,7 @@ Doesn't have a navigation bar
 ## Verify use case "Bicycle Network Routes and Road Safety Part 1"
 
 * Open Web application
+* Wait for "10" second
 * Click "Show more ↓"
 * Wait for "2" second
 * Click "Bicycle Network Routes and Road Safety Part 1"
@@ -128,25 +129,36 @@ Doesn't have a navigation bar
    |Bicycle Network Routes and Road Safety|
    |Scenario   |
 
-Verify use case "Bicycle Network Routes and Road Safety Part 2"
-Tags: Broken
-Open Web application
-Click "Show more ↓"
-Wait for "2" second
-Click "Bicycle Network Routes and Road Safety Part 2"
-Confirm items in navigation bar
+## Verify use case "Bicycle Network Routes and Road Safety Part 2"
+* Open Web application
+* Wait for "10" second
+* Click "Show more ↓"
+* Wait for "2" second
+* Click "Bicycle Network Routes and Road Safety Part 2"
+* Wait for "3" second
+* Confirm items in navigation bar
 
+   |description|
+   |-----------|
+   |Home       |
+   |About      |
+   |FAQ        |
+   |Contact    |
    
- Confirm image in navigation bar "/static/images/moplogo.png"
- Confirm image in navigation bar "/static/City_Of_Melbourne_Logo.png"
- Confirm button in navigation bar "https://github.com/D2I-Melbourne/MOP"
+* Confirm image in navigation bar "/static/images/moplogo.png"
+* Confirm image in navigation bar "/static/City_Of_Melbourne_Logo.png"
+* Confirm button in navigation bar "https://github.com/D2I-Melbourne/MOP"
 
  Must have 
-
+   |description|
+   |-----------|
+   |Bicycle Network Routes and Road Safety|
+   |Scenario   |
    
 ## Verify use case "Ideal Green Wall Locations"
 
 * Open Web application
+* Wait for "10" second
 * Click "Show more ↓"
 * Wait for "2" second
 * Click "Ideal Green Wall Locations"
@@ -174,6 +186,7 @@ Confirm items in navigation bar
 ## Verify use case "Event Impacts and Effects on Pedestrian Traffic"
 
 * Open Web application
+* Wait for "10" second
 * Click "Show more ↓"
 * Wait for "2" second
 * Click "Event Impacts and Effects on Pedestrian Traffic"
@@ -200,6 +213,7 @@ Confirm items in navigation bar
 ## Verify use case "Pedestrian Network Routes and Road Safety Part 1"
 
 * Open Web application
+* Wait for "10" second
 * Click "Show more ↓"
 * Wait for "2" second
 * Click "Pedestrian Network Routes and Road Safety Part 1"
@@ -226,6 +240,7 @@ Confirm items in navigation bar
 ## Verify use case "Ideal Green Roof Locations"
 
 * Open Web application
+* Wait for "10" second
 * Click "Show more ↓"
 * Wait for "2" second
 * Click "Ideal Green Roof Locations"
@@ -252,6 +267,7 @@ Confirm items in navigation bar
    ## Verify use case "Usecase-liveabilityanalysis"
 
 * Open Web application
+* Wait for "10" second
 * Click "Show more ↓"
 * Wait for "2" second
 * Click "Usecase-liveabilityanalysis"
