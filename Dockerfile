@@ -1,3 +1,8 @@
+# Building the image
+#   docker build -t gauge-taiko .
+# Running the image
+#   docker run  --rm -it -v ${PWD}/reports:/gauge/reports gauge-taiko
+
 # This image uses the official node base image.
 FROM node
 
@@ -26,6 +31,10 @@ RUN groupadd -r gauge && useradd -r -g gauge -G audio,video gauge \
     && chown -R gauge:gauge /home/gauge /gauge
 
 USER gauge
+
+# Set a custom npm install location so that Gauge, Taiko and dependencies can be
+# installed without root privileges
+ENV NPM_CONFIG_PREFIX=/home/gauge/.npm-packages
 
 # Install dependencies and plugins
 RUN npm install -g @getgauge/cli \
