@@ -25,7 +25,7 @@ WORKDIR /gauge
 COPY . .
 
 # Install dependencies and plugins
-RUN npm install -g @getgauge/cli \
+RUN npm i @getgauge/cli \
     && npm install \
     && gauge install \
     && gauge install screenshot \
