@@ -7,7 +7,6 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y google-chrome-stable
 
-
 # Set a custom npm install location so that Gauge, Taiko and dependencies can be
 # installed without root privileges
 ENV NPM_CONFIG_PREFIX=/home/gauge/.npm-packages
@@ -24,13 +23,6 @@ WORKDIR /gauge
 # Copy the local working folder
 COPY . .
 
-# Install dependencies and plugins
-RUN npm i @getgauge/cli \
-    && npm install \
-    && gauge install \
-    && gauge install screenshot \
-    && gauge config check_updates false
-
 # Create an unprivileged user to run Taiko tests
 RUN groupadd -r gauge && useradd -r -g gauge -G audio,video gauge \
     && mkdir -p /home/gauge/.npm-packages/lib \
@@ -38,6 +30,13 @@ RUN groupadd -r gauge && useradd -r -g gauge -G audio,video gauge \
 
 # Switch to gauge user
 USER gauge
+
+# Install dependencies and plugins
+RUN npm install @getgauge/cli \
+    && npm install \
+    && ./node_modules/.bin/gauge install \
+    && ./node_modules/.bin/gauge install screenshot \
+    && ./node_modules/.bin/gauge config check_updates false
 
 # Default command on running the image
 ENTRYPOINT ["npm", "test"]
