@@ -290,3 +290,29 @@ Doesn't have a navigation bar
    |-----------|
    |Liveability Analysis by Location|
    |Scenario   |
+
+## Verify use case "Live events and the effect on foot traffic and business"
+
+* Open Web application
+* Click "Show more ↓"
+* Wait for "2" second
+* Click "Use case Live events and the effect on foot traffic and business"
+* Wait for "3" second
+* Confirm items in navigation bar
+
+   |description|
+   |-----------|
+   |Home       |
+   |About      |
+   |FAQ        |
+   |Contact    |
+   
+* Confirm image in navigation bar "/static/images/moplogo.png"
+* Confirm image in navigation bar "/static/City_Of_Melbourne_Logo.png"
+* Confirm button in navigation bar "https://github.com/D2I-Melbourne/MOP"
+
+* Must have 
+   |description|
+   |-----------|
+   |Live events and the effect on foot traffic and business|
+   |Scenario   |
